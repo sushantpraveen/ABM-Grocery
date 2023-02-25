@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500
+                      ;600;700&display=swap" rel="stylesheet">
+</head>
+<div class="header">
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+              <a href="../index.html"><img src="../Images/logo.png" height="85px" width="180px"></a>
+          </div>
+      <nav>
+           <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../revolution/Revolution.html" target="_blank">Revolution</a></li>
+              <li><a href="../product page/Product.html">Products</a></li>
+              <li><a href="../advantages page/Advantages.html">Advantages</a></li>
+              <li><a href="../sign up page/SignUp.html">Contact Us</a></li>
+          </ul>
+      </nav>
+    <a href="../cart/Cart.html"><img src="../Images/cart.png" width="30px" height="30px"></a>  
+    <!--img src="menu.png" class="menu-icon"-->
+     </div>	
+    </div>
+  </div>
+    <!-----------cart items details ------->
+    <div class="small-container">
+        <h1 class="title">Cart</h1><hr>
+    </div>	
+    <div class="small-container cart-page">
+        <table id="dsTable">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-1.jpg">
+                        <div>
+                            <p>Magnum Tub Milk Chocolate Vanilla Ice Cream 440ml</p>
+                            <small>Price: ₹297</small>
+                            <br>
+                            <a onclick = "deleteRow(this,'a')"  >Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"  onchange="calc(this,'a')" ></td>
+                <td id="a">297</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-2.png">
+                        <div>
+                            <p>Grapefruit Juice 200ml</p>
+                            <small>Price: ₹40</small>
+                            <br>
+                            <a  onclick = "deleteRow(this,'b')" >Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" onchange="calc(this,'b')" ></td>
+                <td id="b" >40</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-3.png">
+                        <div>
+                            <p>Organic Sugar 500gm</p>
+                            <small>Price: ₹99</small>
+                            <br>
+                            <a onclick = "deleteRow(this,'.c')" >Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" onchange="calc(this,'c')" ></td>
+                <td id="c">99</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="b1">540.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td id="b2" >73.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="b3">612.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+ <!-----------------footer--------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for android and ios.</p>
+                <div class="app-logo">
+                 <img src="../Images/Home/play-store.png">
+                 <img src="../Images/Home/app-store.png">
+             </div>			   
+             </div>
+            <div class="footer-col-2">
+                <p>ABM Grocery allows you to relaxed way of browsing and shopping for groceries.</p>
+            </div>
+            <div class="footer-col-3">
+             <h3>Useful Links</h3>
+             <ul>
+                 <li><a class="hp" href="../aboutUs page/AboutUs.html">About us</a></li>
+                 <li><a class="hp" href="../privacy policy/PrivacyPolicy.html">Privacy Policy</a></li>
+                 <li><a class="hp" href="../terms and conditions/Terms_And_Conditions.html">Terms and Conditions</a></li>
+                 <li><a class="hp" href="../vision and purpose/VisionPurpose.html">Our Vision and Purpose</a></li>
+             </ul>
+         </div>
+         <div class="footer-col-3">
+             <h3>Follow Us</h3>
+             <ul>
+                 <li><a class="hp" href="">Facebook</a></li>
+                 <li><a class="hp" href="">Twitter</a></li>
+                 <li><a class="hp" href="">Instagram</a></li>
+                 <li><a class="hp" href="">Youtube</a></li>
+             </ul>
+         </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020-2024 - ABM Groceries</p>
+    </div>
+ </div>
+    <script src="cart.js" ></script>
+ </body>
+ </html>
